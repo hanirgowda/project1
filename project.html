@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <style> 
+                body{
+                    background-color:pink
+                    }</style>
+<button onclick="document.getElementById('loginForm').style.display='block'">Login</button>
+
+<div id="loginForm" style="display:none;">
+  <form>
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Login">
+  </form>
+</div>  
+<button onclick="document.getElementById('image').style.display='block'">Show Image</button>
+
+<img id="image" src="C:\Users\hanig\Downloads\WhatsApp Image 2024-07-20 at 2.43.41 PM.jpeg" style="display:none;">
+<button onclick="fillParagraph()">Fill Paragraph</button>
+
+<p id="paragraph" placeholder="Click the button to fill me!"></p>
+
+<script>
+  function fillParagraph() {
+    var paragraph = document.getElementById("paragraph");
+    paragraph.innerHTML = "HAYATECH PRPOER SOLUTION IS A SOFTWARE COMPANY IN BENGLORE TQ ";
+  }
+
+</script>
+
+</body>
+</head>
+</html>
+
+
+
